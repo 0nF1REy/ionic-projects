@@ -1,0 +1,5 @@
+npm i -g @ionic/cli@7
+ionic start 
+ionic info
+ionic g page pages/receita
+ionic g page pages/cadastro
