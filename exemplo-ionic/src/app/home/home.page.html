@@ -1,0 +1,26 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Receitas de Hoje
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-card *ngFor="let r of receitas" routerLink="/receita">
+    <img [src]="r.foto" />
+    <ion-card-header>
+      <ion-card-title>
+        {{ r.nomeReceita }}
+      </ion-card-title>
+      <ion-card-subtitle>
+        {{ r.autor }}
+      </ion-card-subtitle>
+    </ion-card-header>
+
+    <ion-card-content>
+      {{ r.descricao }}
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>
