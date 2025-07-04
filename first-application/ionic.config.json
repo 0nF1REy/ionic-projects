@@ -1,7 +1,0 @@
-{
-  "name": "first-application",
-  "integrations": {
-    "capacitor": {}
-  },
-  "type": "angular-standalone"
-}
